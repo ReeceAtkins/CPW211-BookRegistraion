@@ -1,4 +1,4 @@
-﻿namespace CPW211_BookRegistraion
+﻿namespace CPW211_BookRegistration
 {
     partial class Form1
     {
