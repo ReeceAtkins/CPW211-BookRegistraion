@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPW211-BookRegistraion", "CPW211-BookRegistraion\CPW211-BookRegistraion.csproj", "{0B9767D2-6A85-4D61-860D-0E4C69E81304}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0B9767D2-6A85-4D61-860D-0E4C69E81304}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B9767D2-6A85-4D61-860D-0E4C69E81304}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B9767D2-6A85-4D61-860D-0E4C69E81304}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B9767D2-6A85-4D61-860D-0E4C69E81304}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9D69C7E4-8076-44FF-98D6-6A5C6AE79CF9}
+	EndGlobalSection
+EndGlobal
