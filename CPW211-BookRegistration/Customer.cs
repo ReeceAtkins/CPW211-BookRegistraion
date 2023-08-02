@@ -11,7 +11,14 @@ namespace CPW211_BookRegistration
     {
         private int _customerId;
 
-        public Customer(string title, string firstName, string lastName, DateOnly dateOfBirth) 
+        /// <summary>
+        /// Creates a Customer with title, first Name, last Name, and date of birth
+        /// </summary>
+        /// <param name="title">Customer's title</param>
+        /// <param name="firstName">Customer's first name</param>
+        /// <param name="lastName">Customer's last name</param>
+        /// <param name="dateOfBirth">Customer's date of birth</param>
+        public Customer(string title, string firstName, string lastName, DateOnly dateOfBirth)
         {
             Title = title;
             FirstName = firstName;
@@ -47,5 +54,14 @@ namespace CPW211_BookRegistration
         /// The customer's date of birth
         /// </summary>
         public DateOnly DateOfBirth { get; set; }
+
+        /// <summary>
+        /// Formatted first name, last name
+        /// </summary>
+        /// <returns>Returns first name, last name</returns>
+        public override string ToString()
+        {
+            return FirstName + ", " + LastName;
+        }
     }
 }
