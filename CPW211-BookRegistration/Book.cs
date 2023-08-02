@@ -29,5 +29,14 @@
         /// The price of the book
         /// </summary>
         public decimal Price { get; set; }
+
+        /// <summary>
+        /// String representation of the book
+        /// </summary>
+        /// <returns>Returns Book title</returns>
+        public override string ToString()
+        {
+            return Title;
+        }
     }
 }
