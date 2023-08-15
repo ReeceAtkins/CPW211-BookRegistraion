@@ -47,7 +47,7 @@
             btnAddCustomer.Location = new Point(12, 12);
             btnAddCustomer.Name = "btnAddCustomer";
             btnAddCustomer.Size = new Size(178, 84);
-            btnAddCustomer.TabIndex = 0;
+            btnAddCustomer.TabIndex = 4;
             btnAddCustomer.Text = "Add Customer";
             btnAddCustomer.UseVisualStyleBackColor = true;
             // 
@@ -56,7 +56,7 @@
             btnAddBook.Location = new Point(12, 102);
             btnAddBook.Name = "btnAddBook";
             btnAddBook.Size = new Size(178, 84);
-            btnAddBook.TabIndex = 1;
+            btnAddBook.TabIndex = 5;
             btnAddBook.Text = "Add Book";
             btnAddBook.UseVisualStyleBackColor = true;
             // 
@@ -65,8 +65,8 @@
             btnRegisterBook.Location = new Point(293, 196);
             btnRegisterBook.Name = "btnRegisterBook";
             btnRegisterBook.Size = new Size(250, 84);
-            btnRegisterBook.TabIndex = 2;
-            btnRegisterBook.Text = "Register Book";
+            btnRegisterBook.TabIndex = 3;
+            btnRegisterBook.Text = "&Register Book";
             btnRegisterBook.UseVisualStyleBackColor = true;
             // 
             // cboCustomers
@@ -75,7 +75,7 @@
             cboCustomers.Location = new Point(293, 12);
             cboCustomers.Name = "cboCustomers";
             cboCustomers.Size = new Size(250, 28);
-            cboCustomers.TabIndex = 3;
+            cboCustomers.TabIndex = 0;
             // 
             // cboBooks
             // 
@@ -83,14 +83,14 @@
             cboBooks.Location = new Point(293, 80);
             cboBooks.Name = "cboBooks";
             cboBooks.Size = new Size(250, 28);
-            cboBooks.TabIndex = 4;
+            cboBooks.TabIndex = 1;
             // 
             // dtpDate
             // 
             dtpDate.Location = new Point(293, 141);
             dtpDate.Name = "dtpDate";
             dtpDate.Size = new Size(250, 27);
-            dtpDate.TabIndex = 5;
+            dtpDate.TabIndex = 2;
             // 
             // label1
             // 
@@ -148,6 +148,7 @@
             // 
             // RegisterBookForm
             // 
+            AcceptButton = btnRegisterBook;
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(692, 362);
