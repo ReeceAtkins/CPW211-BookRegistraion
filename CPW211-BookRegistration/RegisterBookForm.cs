@@ -1,8 +1,8 @@
 namespace CPW211_BookRegistration
 {
-    public partial class Form1 : Form
+    public partial class RegisterBookForm : Form
     {
-        public Form1()
+        public RegisterBookForm()
         {
             InitializeComponent();
         }
