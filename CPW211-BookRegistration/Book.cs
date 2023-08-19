@@ -30,6 +30,9 @@
         /// </summary>
         public decimal Price { get; set; }
 
+        /// <summary>
+        /// The Title and Price of the Book
+        /// </summary>
         public string TitleAndPrice
         {
             get { return Title + ", " + Price.ToString("C"); }
