@@ -61,7 +61,15 @@ namespace CPW211_BookRegistration
         /// <returns>Returns first name, last name</returns>
         public override string ToString()
         {
-            return FirstName + ", " + LastName;
+            return FirstName + " " + LastName;
+        }
+
+        /// <summary>
+        /// Full name of a Customer
+        /// </summary>
+        public string FullName
+        {
+            get { return LastName + ", " + FirstName; }
         }
     }
 }
