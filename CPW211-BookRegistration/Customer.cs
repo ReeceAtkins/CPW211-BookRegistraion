@@ -48,7 +48,7 @@ namespace CPW211_BookRegistration
         /// <summary>
         /// The customers legal last name
         /// </summary>
-        private string LastName { get; set; }
+        public string LastName { get; set; }
 
         /// <summary>
         /// The customer's date of birth
