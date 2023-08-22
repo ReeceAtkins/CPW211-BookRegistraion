@@ -172,7 +172,7 @@
             Controls.Add(txtFirstName);
             Controls.Add(dtpDateOfBirth);
             Name = "AddCustomer";
-            Text = "AddCustomer";
+            Text = "Add Customer";
             ResumeLayout(false);
             PerformLayout();
         }
