@@ -6,5 +6,11 @@ namespace CPW211_BookRegistration
         {
             InitializeComponent();
         }
+
+        private void btnAddBook_Click(object sender, EventArgs e)
+        {
+            AddBook addBookForm = new AddBook();
+            addBookForm.ShowDialog();
+        }
     }
 }
