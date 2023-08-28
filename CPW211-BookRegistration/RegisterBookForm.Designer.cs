@@ -50,6 +50,7 @@
             btnAddCustomer.TabIndex = 4;
             btnAddCustomer.Text = "Add Customer";
             btnAddCustomer.UseVisualStyleBackColor = true;
+            btnAddCustomer.Click += btnAddCustomer_Click;
             // 
             // btnAddBook
             // 
