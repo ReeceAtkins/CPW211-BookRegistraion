@@ -167,6 +167,7 @@
             Controls.Add(btnAddCustomer);
             Name = "RegisterBookForm";
             Text = "Register Book";
+            Load += RegisterBookForm_Load;
             ResumeLayout(false);
             PerformLayout();
         }
