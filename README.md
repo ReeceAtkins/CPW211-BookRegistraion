@@ -17,3 +17,5 @@ This project is to apply learned skills in classes to working in a team as well 
 - Database: TBD
 
 ## Project Screenshots
+![image](https://github.com/ReeceAtkins/CPW211-BookRegistration/assets/118577692/d216dc6e-54db-4520-a500-753e346879e3)
+![image](https://github.com/ReeceAtkins/CPW211-BookRegistration/assets/118577692/d09f9fbc-bf57-403d-872f-d2b7dd184c49)
