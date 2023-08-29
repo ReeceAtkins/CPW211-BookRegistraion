@@ -62,6 +62,7 @@
             btnAddBook.TabIndex = 5;
             btnAddBook.Text = "Add Book";
             btnAddBook.UseVisualStyleBackColor = true;
+            btnAddBook.Click += btnAddBook_Click;
             // 
             // btnRegisterBook
             // 
