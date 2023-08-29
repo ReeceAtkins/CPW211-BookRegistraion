@@ -40,6 +40,7 @@
             lblCustomerError = new Label();
             lblBookError = new Label();
             lblDateError = new Label();
+            lblErrorMsg = new Label();
             SuspendLayout();
             // 
             // btnAddCustomer
@@ -66,13 +67,14 @@
             // 
             // btnRegisterBook
             // 
-            btnRegisterBook.Location = new Point(256, 147);
+            btnRegisterBook.Location = new Point(256, 180);
             btnRegisterBook.Margin = new Padding(3, 2, 3, 2);
             btnRegisterBook.Name = "btnRegisterBook";
             btnRegisterBook.Size = new Size(219, 63);
             btnRegisterBook.TabIndex = 3;
             btnRegisterBook.Text = "&Register Book";
             btnRegisterBook.UseVisualStyleBackColor = true;
+            btnRegisterBook.Click += btnRegisterBook_Click;
             // 
             // cboCustomers
             // 
@@ -82,6 +84,7 @@
             cboCustomers.Name = "cboCustomers";
             cboCustomers.Size = new Size(219, 23);
             cboCustomers.TabIndex = 0;
+            cboCustomers.SelectedIndexChanged += cboCustomers_SelectedIndexChanged;
             // 
             // cboBooks
             // 
@@ -91,6 +94,7 @@
             cboBooks.Name = "cboBooks";
             cboBooks.Size = new Size(219, 23);
             cboBooks.TabIndex = 1;
+            cboBooks.SelectedIndexChanged += cboBooks_SelectedIndexChanged;
             // 
             // dtpDate
             // 
@@ -99,6 +103,7 @@
             dtpDate.Name = "dtpDate";
             dtpDate.Size = new Size(219, 23);
             dtpDate.TabIndex = 2;
+            dtpDate.ValueChanged += dtpDate_ValueChanged;
             // 
             // label1
             // 
@@ -154,12 +159,22 @@
             lblDateError.Size = new Size(0, 15);
             lblDateError.TabIndex = 11;
             // 
+            // lblErrorMsg
+            // 
+            lblErrorMsg.AutoSize = true;
+            lblErrorMsg.ForeColor = Color.Red;
+            lblErrorMsg.Location = new Point(256, 147);
+            lblErrorMsg.Name = "lblErrorMsg";
+            lblErrorMsg.Size = new Size(0, 15);
+            lblErrorMsg.TabIndex = 12;
+            // 
             // RegisterBookForm
             // 
             AcceptButton = btnRegisterBook;
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(606, 272);
+            Controls.Add(lblErrorMsg);
             Controls.Add(lblDateError);
             Controls.Add(lblBookError);
             Controls.Add(lblCustomerError);
@@ -175,7 +190,6 @@
             Margin = new Padding(3, 2, 3, 2);
             Name = "RegisterBookForm";
             Text = "Register Book";
-            Load += RegisterBookForm_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -194,5 +208,6 @@
         private Label lblCustomerError;
         private Label lblBookError;
         private Label lblDateError;
+        private Label lblErrorMsg;
     }
 }
