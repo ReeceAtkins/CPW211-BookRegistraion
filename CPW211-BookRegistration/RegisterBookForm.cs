@@ -10,6 +10,7 @@ namespace CPW211_BookRegistration
         private void RegisterBookForm_Load(object sender, EventArgs e)
         {
             PopulateCustomer();
+            PopulateBook();
         }
 
         private void PopulateCustomer()
@@ -30,12 +31,7 @@ namespace CPW211_BookRegistration
             AddBook addBookForm = new AddBook();
             addBookForm.ShowDialog();
         }
-        
-        private void RegisterBookForm_Load(object sender, EventArgs e)
-        {
-            PopulateBook();
-        }
-
+     
         private void PopulateBook()
         {
             // Clear any previous objects
