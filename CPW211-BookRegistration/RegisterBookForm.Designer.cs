@@ -44,27 +44,32 @@
             // 
             // btnAddCustomer
             // 
-            btnAddCustomer.Location = new Point(12, 12);
+            btnAddCustomer.Location = new Point(10, 9);
+            btnAddCustomer.Margin = new Padding(3, 2, 3, 2);
             btnAddCustomer.Name = "btnAddCustomer";
-            btnAddCustomer.Size = new Size(178, 84);
+            btnAddCustomer.Size = new Size(156, 63);
             btnAddCustomer.TabIndex = 4;
             btnAddCustomer.Text = "Add Customer";
             btnAddCustomer.UseVisualStyleBackColor = true;
+            btnAddCustomer.Click += btnAddCustomer_Click;
             // 
             // btnAddBook
             // 
-            btnAddBook.Location = new Point(12, 102);
+            btnAddBook.Location = new Point(10, 76);
+            btnAddBook.Margin = new Padding(3, 2, 3, 2);
             btnAddBook.Name = "btnAddBook";
-            btnAddBook.Size = new Size(178, 84);
+            btnAddBook.Size = new Size(156, 63);
             btnAddBook.TabIndex = 5;
             btnAddBook.Text = "Add Book";
             btnAddBook.UseVisualStyleBackColor = true;
+            btnAddBook.Click += btnAddBook_Click;
             // 
             // btnRegisterBook
             // 
-            btnRegisterBook.Location = new Point(293, 196);
+            btnRegisterBook.Location = new Point(256, 147);
+            btnRegisterBook.Margin = new Padding(3, 2, 3, 2);
             btnRegisterBook.Name = "btnRegisterBook";
-            btnRegisterBook.Size = new Size(250, 84);
+            btnRegisterBook.Size = new Size(219, 63);
             btnRegisterBook.TabIndex = 3;
             btnRegisterBook.Text = "&Register Book";
             btnRegisterBook.UseVisualStyleBackColor = true;
@@ -72,50 +77,53 @@
             // cboCustomers
             // 
             cboCustomers.FormattingEnabled = true;
-            cboCustomers.Location = new Point(293, 12);
+            cboCustomers.Location = new Point(256, 9);
+            cboCustomers.Margin = new Padding(3, 2, 3, 2);
             cboCustomers.Name = "cboCustomers";
-            cboCustomers.Size = new Size(250, 28);
+            cboCustomers.Size = new Size(219, 23);
             cboCustomers.TabIndex = 0;
             // 
             // cboBooks
             // 
             cboBooks.FormattingEnabled = true;
-            cboBooks.Location = new Point(293, 80);
+            cboBooks.Location = new Point(256, 60);
+            cboBooks.Margin = new Padding(3, 2, 3, 2);
             cboBooks.Name = "cboBooks";
-            cboBooks.Size = new Size(250, 28);
+            cboBooks.Size = new Size(219, 23);
             cboBooks.TabIndex = 1;
             // 
             // dtpDate
             // 
-            dtpDate.Location = new Point(293, 141);
+            dtpDate.Location = new Point(256, 106);
+            dtpDate.Margin = new Padding(3, 2, 3, 2);
             dtpDate.Name = "dtpDate";
-            dtpDate.Size = new Size(250, 27);
+            dtpDate.Size = new Size(219, 23);
             dtpDate.TabIndex = 2;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(196, 20);
+            label1.Location = new Point(172, 15);
             label1.Name = "label1";
-            label1.Size = new Size(81, 20);
+            label1.Size = new Size(67, 15);
             label1.TabIndex = 6;
             label1.Text = "Customers:";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(225, 88);
+            label2.Location = new Point(197, 66);
             label2.Name = "label2";
-            label2.Size = new Size(52, 20);
+            label2.Size = new Size(42, 15);
             label2.TabIndex = 7;
             label2.Text = "Books:";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(233, 148);
+            label3.Location = new Point(204, 111);
             label3.Name = "label3";
-            label3.Size = new Size(44, 20);
+            label3.Size = new Size(34, 15);
             label3.TabIndex = 8;
             label3.Text = "Date:";
             // 
@@ -123,35 +131,35 @@
             // 
             lblCustomerError.AutoSize = true;
             lblCustomerError.ForeColor = Color.Red;
-            lblCustomerError.Location = new Point(549, 20);
+            lblCustomerError.Location = new Point(480, 15);
             lblCustomerError.Name = "lblCustomerError";
-            lblCustomerError.Size = new Size(0, 20);
+            lblCustomerError.Size = new Size(0, 15);
             lblCustomerError.TabIndex = 9;
             // 
             // lblBookError
             // 
             lblBookError.AutoSize = true;
             lblBookError.ForeColor = Color.Red;
-            lblBookError.Location = new Point(549, 88);
+            lblBookError.Location = new Point(480, 66);
             lblBookError.Name = "lblBookError";
-            lblBookError.Size = new Size(0, 20);
+            lblBookError.Size = new Size(0, 15);
             lblBookError.TabIndex = 10;
             // 
             // lblDateError
             // 
             lblDateError.AutoSize = true;
             lblDateError.ForeColor = Color.Red;
-            lblDateError.Location = new Point(549, 148);
+            lblDateError.Location = new Point(480, 111);
             lblDateError.Name = "lblDateError";
-            lblDateError.Size = new Size(0, 20);
+            lblDateError.Size = new Size(0, 15);
             lblDateError.TabIndex = 11;
             // 
             // RegisterBookForm
             // 
             AcceptButton = btnRegisterBook;
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(692, 362);
+            ClientSize = new Size(606, 272);
             Controls.Add(lblDateError);
             Controls.Add(lblBookError);
             Controls.Add(lblCustomerError);
@@ -164,6 +172,7 @@
             Controls.Add(btnRegisterBook);
             Controls.Add(btnAddBook);
             Controls.Add(btnAddCustomer);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "RegisterBookForm";
             Text = "Register Book";
             Load += RegisterBookForm_Load;
