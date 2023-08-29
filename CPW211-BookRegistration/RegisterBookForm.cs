@@ -6,7 +6,7 @@ namespace CPW211_BookRegistration
         {
             InitializeComponent();
         }
-        
+
         private void RegisterBookForm_Load(object sender, EventArgs e)
         {
             PopulateBook();
@@ -23,6 +23,12 @@ namespace CPW211_BookRegistration
             {
                 cboBooks.Items.Add(currentBook);
             }
+        }
+
+        private void btnAddCustomer_Click(object sender, EventArgs e)
+        {
+            AddCustomer addCustomerForm = new AddCustomer();
+            addCustomerForm.ShowDialog();
         }
     }
 }
