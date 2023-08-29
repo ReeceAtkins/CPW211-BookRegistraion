@@ -38,98 +38,114 @@
             lblErrorTitle = new Label();
             lblErrorPrice = new Label();
             lblErrorISBN = new Label();
+            lblErrorMsg = new Label();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(12, 19);
+            label1.Location = new Point(10, 14);
             label1.Name = "label1";
-            label1.Size = new Size(38, 20);
+            label1.Size = new Size(29, 15);
             label1.TabIndex = 0;
             label1.Text = "Title";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(9, 58);
+            label2.Location = new Point(8, 44);
             label2.Name = "label2";
-            label2.Size = new Size(41, 20);
+            label2.Size = new Size(33, 15);
             label2.TabIndex = 1;
             label2.Text = "Price";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(9, 109);
+            label3.Location = new Point(8, 82);
             label3.Name = "label3";
-            label3.Size = new Size(41, 20);
+            label3.Size = new Size(32, 15);
             label3.TabIndex = 2;
             label3.Text = "ISBN";
             // 
             // txtTitle
             // 
-            txtTitle.Location = new Point(69, 12);
+            txtTitle.Location = new Point(60, 9);
+            txtTitle.Margin = new Padding(3, 2, 3, 2);
             txtTitle.Name = "txtTitle";
-            txtTitle.Size = new Size(201, 27);
+            txtTitle.Size = new Size(176, 23);
             txtTitle.TabIndex = 0;
             // 
             // txtPrice
             // 
-            txtPrice.Location = new Point(69, 58);
+            txtPrice.Location = new Point(60, 44);
+            txtPrice.Margin = new Padding(3, 2, 3, 2);
             txtPrice.Name = "txtPrice";
-            txtPrice.Size = new Size(201, 27);
+            txtPrice.Size = new Size(176, 23);
             txtPrice.TabIndex = 1;
             // 
             // txtISBN
             // 
-            txtISBN.Location = new Point(69, 106);
+            txtISBN.Location = new Point(60, 80);
+            txtISBN.Margin = new Padding(3, 2, 3, 2);
             txtISBN.Name = "txtISBN";
-            txtISBN.Size = new Size(201, 27);
+            txtISBN.Size = new Size(176, 23);
             txtISBN.TabIndex = 2;
             // 
             // btnAddBook
             // 
-            btnAddBook.Location = new Point(69, 151);
+            btnAddBook.Location = new Point(60, 152);
+            btnAddBook.Margin = new Padding(3, 2, 3, 2);
             btnAddBook.Name = "btnAddBook";
-            btnAddBook.Size = new Size(201, 72);
+            btnAddBook.Size = new Size(176, 54);
             btnAddBook.TabIndex = 3;
             btnAddBook.Text = "Add Book";
             btnAddBook.UseVisualStyleBackColor = true;
+            btnAddBook.Click += btnAddBook_Click;
             // 
             // lblErrorTitle
             // 
             lblErrorTitle.AutoSize = true;
             lblErrorTitle.ForeColor = Color.Red;
-            lblErrorTitle.Location = new Point(296, 19);
+            lblErrorTitle.Location = new Point(259, 14);
             lblErrorTitle.Name = "lblErrorTitle";
-            lblErrorTitle.Size = new Size(0, 20);
+            lblErrorTitle.Size = new Size(0, 15);
             lblErrorTitle.TabIndex = 7;
             // 
             // lblErrorPrice
             // 
             lblErrorPrice.AutoSize = true;
             lblErrorPrice.ForeColor = Color.Red;
-            lblErrorPrice.Location = new Point(296, 65);
+            lblErrorPrice.Location = new Point(259, 49);
             lblErrorPrice.Name = "lblErrorPrice";
-            lblErrorPrice.Size = new Size(0, 20);
+            lblErrorPrice.Size = new Size(0, 15);
             lblErrorPrice.TabIndex = 8;
             // 
             // lblErrorISBN
             // 
             lblErrorISBN.AutoSize = true;
             lblErrorISBN.ForeColor = Color.Red;
-            lblErrorISBN.Location = new Point(296, 113);
+            lblErrorISBN.Location = new Point(259, 85);
             lblErrorISBN.Name = "lblErrorISBN";
-            lblErrorISBN.Size = new Size(0, 20);
+            lblErrorISBN.Size = new Size(0, 15);
             lblErrorISBN.TabIndex = 9;
+            // 
+            // lblErrorMsg
+            // 
+            lblErrorMsg.AutoSize = true;
+            lblErrorMsg.ForeColor = Color.Red;
+            lblErrorMsg.Location = new Point(60, 121);
+            lblErrorMsg.Name = "lblErrorMsg";
+            lblErrorMsg.Size = new Size(0, 15);
+            lblErrorMsg.TabIndex = 10;
             // 
             // AddBook
             // 
             AcceptButton = btnAddBook;
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(442, 257);
+            ClientSize = new Size(387, 228);
+            Controls.Add(lblErrorMsg);
             Controls.Add(lblErrorISBN);
             Controls.Add(lblErrorPrice);
             Controls.Add(lblErrorTitle);
@@ -140,6 +156,7 @@
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "AddBook";
             Text = "Add Book";
             ResumeLayout(false);
@@ -158,5 +175,6 @@
         private Label lblErrorTitle;
         private Label lblErrorPrice;
         private Label lblErrorISBN;
+        private Label lblErrorMsg;
     }
 }

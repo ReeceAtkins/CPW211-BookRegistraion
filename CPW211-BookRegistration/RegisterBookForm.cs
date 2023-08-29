@@ -36,7 +36,6 @@ namespace CPW211_BookRegistration
             ResetForm();
         }
 
-
         private void PopulateBook()
         {
             // Clear any previous objects
