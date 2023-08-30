@@ -18,7 +18,7 @@ namespace CPW211_BookRegistration
         /// <param name="firstName">Customer's first name</param>
         /// <param name="lastName">Customer's last name</param>
         /// <param name="dateOfBirth">Customer's date of birth</param>
-        public Customer(string title, string firstName, string lastName, DateOnly dateOfBirth)
+        public Customer(string title, string firstName, string lastName, DateTime dateOfBirth)
         {
             Title = title;
             FirstName = firstName;
@@ -53,7 +53,7 @@ namespace CPW211_BookRegistration
         /// <summary>
         /// The customer's date of birth
         /// </summary>
-        public DateOnly DateOfBirth { get; set; }
+        public DateTime DateOfBirth { get; set; }
 
         /// <summary>
         /// Formatted first name, last name

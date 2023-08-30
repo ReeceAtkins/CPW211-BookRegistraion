@@ -62,9 +62,7 @@ namespace CPW211_BookRegistration
                 string firstName = reader["FirstName"].ToString();
                 string lastName = reader["LastName"].ToString();
 
-                // converts SQL DateTime to C# DateOnly
-                DateTime dob = (DateTime)reader["DateOfBirth"];
-                DateOnly dateOfBirth = DateOnly.FromDateTime(dob);
+                DateTime dateOfBirth = Convert.ToDateTime(reader["DateOfBirth"]);
 
                 Customer tempCus = new Customer(title, firstName, lastName, dateOfBirth);
                 tempCus.CustomerID = id;
