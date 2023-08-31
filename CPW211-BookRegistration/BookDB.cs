@@ -67,5 +67,22 @@ namespace CPW211_BookRegistration
             // Return list of Customers
             return books;
         }
+
+        public static void Delete(Book book)
+        {
+            using SqlConnection con = DBHelper.GetDatabaseConnection();
+            SqlCommand insertCmd = new SqlCommand();
+            insertCmd.Connection = con;
+
+            insertCmd.CommandText = "Delete from Book " +
+                                    "Where ISBN = @isbn";
+            insertCmd.Parameters.AddWithValue("@isbn", book.ISBN);
+
+            con.Open();
+
+            insertCmd.ExecuteNonQuery();
+
+            MessageBox.Show("Book Deleted");
+        }
     }
 }

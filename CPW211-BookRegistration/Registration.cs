@@ -20,5 +20,10 @@ namespace CPW211_BookRegistration
         public string ISBN { get; set; }
 
         public DateTime RegDate { get; set; }
+
+        public override string ToString()
+        {
+            return $"CustomerID: {CustomerID} ISBN: {ISBN}";
+        }
     }
 }

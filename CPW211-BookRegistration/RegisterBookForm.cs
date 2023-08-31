@@ -122,5 +122,11 @@ namespace CPW211_BookRegistration
         {
             lblErrorMsg.Text = "";
         }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            Delete delete = new Delete();
+            delete.ShowDialog();
+        }
     }
 }
