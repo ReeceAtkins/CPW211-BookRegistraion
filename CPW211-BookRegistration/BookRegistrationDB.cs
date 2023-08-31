@@ -70,5 +70,34 @@ namespace CPW211_BookRegistration
 
             return regCount;
         }
+
+        public static List<Registration> GetAllRegistration()
+        {
+            using SqlConnection con = DBHelper.GetDatabaseConnection();
+
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = con;
+            cmd.CommandText = "SELECT CustomerID, ISBN, RegDate" +
+                            " FROM Registration" +
+                            " ORDER BY CustomerID";
+
+            con.Open();
+
+            SqlDataReader reader = cmd.ExecuteReader();
+
+            List<Registration> regBooks = new();
+
+            while (reader.Read())
+            {
+                int customerId = Convert.ToInt32(reader["CustomerID"]);
+                string ISBN = reader["ISBN"].ToString();
+                DateTime regDate = Convert.ToDateTime(reader["RegDate"]);
+
+                Registration tempRegBook = new Registration(customerId, ISBN, regDate);
+                regBooks.Add(tempRegBook);
+            }
+
+            return regBooks;
+        }
     }
 }
