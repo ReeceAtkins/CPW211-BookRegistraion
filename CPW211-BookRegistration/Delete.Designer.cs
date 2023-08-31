@@ -30,18 +30,18 @@
         {
             tabControl = new TabControl();
             Customers = new TabPage();
+            lblCustomerError = new Label();
             label1 = new Label();
             cboCustomer = new ComboBox();
             Books = new TabPage();
+            lblBookError = new Label();
             label2 = new Label();
             cboBook = new ComboBox();
             tabPage1 = new TabPage();
+            lblRegistrationError = new Label();
             label3 = new Label();
             cboRegistration = new ComboBox();
             btnDelete = new Button();
-            lblCustomerError = new Label();
-            lblBookError = new Label();
-            lblRegistrationError = new Label();
             tabControl.SuspendLayout();
             Customers.SuspendLayout();
             Books.SuspendLayout();
@@ -71,6 +71,15 @@
             Customers.TabIndex = 0;
             Customers.Text = "Customers";
             Customers.UseVisualStyleBackColor = true;
+            // 
+            // lblCustomerError
+            // 
+            lblCustomerError.AutoSize = true;
+            lblCustomerError.ForeColor = Color.Red;
+            lblCustomerError.Location = new Point(35, 106);
+            lblCustomerError.Name = "lblCustomerError";
+            lblCustomerError.Size = new Size(0, 20);
+            lblCustomerError.TabIndex = 2;
             // 
             // label1
             // 
@@ -102,6 +111,15 @@
             Books.Text = "Books";
             Books.UseVisualStyleBackColor = true;
             // 
+            // lblBookError
+            // 
+            lblBookError.AutoSize = true;
+            lblBookError.ForeColor = Color.Red;
+            lblBookError.Location = new Point(61, 112);
+            lblBookError.Name = "lblBookError";
+            lblBookError.Size = new Size(0, 20);
+            lblBookError.TabIndex = 8;
+            // 
             // label2
             // 
             label2.AutoSize = true;
@@ -132,6 +150,15 @@
             tabPage1.Text = "Registration";
             tabPage1.UseVisualStyleBackColor = true;
             // 
+            // lblRegistrationError
+            // 
+            lblRegistrationError.AutoSize = true;
+            lblRegistrationError.ForeColor = Color.Red;
+            lblRegistrationError.Location = new Point(52, 94);
+            lblRegistrationError.Name = "lblRegistrationError";
+            lblRegistrationError.Size = new Size(0, 20);
+            lblRegistrationError.TabIndex = 3;
+            // 
             // label3
             // 
             label3.AutoSize = true;
@@ -157,43 +184,18 @@
             btnDelete.TabIndex = 6;
             btnDelete.Text = "Delete";
             btnDelete.UseVisualStyleBackColor = true;
-            // 
-            // lblCustomerError
-            // 
-            lblCustomerError.AutoSize = true;
-            lblCustomerError.ForeColor = Color.Red;
-            lblCustomerError.Location = new Point(35, 106);
-            lblCustomerError.Name = "lblCustomerError";
-            lblCustomerError.Size = new Size(0, 20);
-            lblCustomerError.TabIndex = 2;
-            // 
-            // lblBookError
-            // 
-            lblBookError.AutoSize = true;
-            lblBookError.ForeColor = Color.Red;
-            lblBookError.Location = new Point(61, 112);
-            lblBookError.Name = "lblBookError";
-            lblBookError.Size = new Size(0, 20);
-            lblBookError.TabIndex = 8;
-            // 
-            // lblRegistrationError
-            // 
-            lblRegistrationError.AutoSize = true;
-            lblRegistrationError.ForeColor = Color.Red;
-            lblRegistrationError.Location = new Point(52, 94);
-            lblRegistrationError.Name = "lblRegistrationError";
-            lblRegistrationError.Size = new Size(0, 20);
-            lblRegistrationError.TabIndex = 3;
+            btnDelete.Click += btnDelete_Click;
             // 
             // Delete
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 467);
+            ClientSize = new Size(403, 467);
             Controls.Add(tabControl);
             Controls.Add(btnDelete);
             Name = "Delete";
             Text = "Delete";
+            Load += Delete_Load;
             tabControl.ResumeLayout(false);
             Customers.ResumeLayout(false);
             Customers.PerformLayout();
