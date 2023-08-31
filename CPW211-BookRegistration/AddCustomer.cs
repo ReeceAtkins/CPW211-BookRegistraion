@@ -24,7 +24,7 @@ namespace CPW211_BookRegistration
                 string title = txtTitle.Text;
                 string firstName = txtFirstName.Text;
                 string lastName = txtLastName.Text;
-                DateOnly dateOfBirth = DateOnly.FromDateTime(dtpDateOfBirth.Value.Date);
+                DateTime dateOfBirth = dtpDateOfBirth.Value.Date;
 
                 Customer cusToAdd = new Customer(title, firstName, lastName, dateOfBirth);
 
