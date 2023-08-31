@@ -99,5 +99,23 @@ namespace CPW211_BookRegistration
 
             return regBooks;
         }
+
+        public static void Delete(Registration reg)
+        {
+            using SqlConnection con = DBHelper.GetDatabaseConnection();
+            SqlCommand insertCmd = new SqlCommand();
+            insertCmd.Connection = con;
+
+            insertCmd.CommandText = "Delete from Registration " +
+                                    "Where ISBN = @isbn and CustomerID = @customerId";
+            insertCmd.Parameters.AddWithValue("@isbn", reg.ISBN);
+            insertCmd.Parameters.AddWithValue("@customerId", reg.CustomerID);
+
+            con.Open();
+
+            insertCmd.ExecuteNonQuery();
+
+            MessageBox.Show("Registration Deleted");
+        }
     }
 }

@@ -74,5 +74,22 @@ namespace CPW211_BookRegistration
             // Return list of Customers
             return customers;
         }
+
+        public static void Delete(Customer customer)
+        {
+            using SqlConnection con = DBHelper.GetDatabaseConnection();
+            SqlCommand insertCmd = new SqlCommand();
+            insertCmd.Connection = con;
+
+            insertCmd.CommandText = "Delete from Customer " +
+                                    "Where CustomerID = @id";
+            insertCmd.Parameters.AddWithValue("@id", customer.CustomerID);
+
+            con.Open();
+
+            insertCmd.ExecuteNonQuery();
+
+            MessageBox.Show("Customer Deleted");
+        }
     }
 }
